@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Submit2FootbalMatch</string>
+    <string name="next_match">Next Match</string>
+    <string name="favorite">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pastMatch">Past Match</string>
+    <string name="nextMatch">Next Match</string>
+    <string name="vs_">VS</string>
+    <string name="shots_">SHOTS</string>
+    <string name="goaler_">GOALER</string>
+    <string name="goalkeeper_">GOALKEEPER</string>
+    <string name="defense_">DEFENSE</string>
+    <string name="midfield_">MIDFIELD</string>
+    <string name="forward_">FORWARD</string>
+    <string name="substitutes_">SUBSTITUTES</string>
+    <string name="home_badge">Home Badge</string>
+    <string name="badge_away">Badge Away</string>
+</resources>
