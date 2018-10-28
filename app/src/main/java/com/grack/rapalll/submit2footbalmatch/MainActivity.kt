@@ -20,14 +20,29 @@ import kotlinx.coroutines.experimental.selects.select
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 import org.jetbrains.anko.support.v4.swipeRefreshLayout
+import android.R.attr.fragment
+import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+    override fun onNavigationItemSelected(p0: MenuItem): Boolean {
+        val id = p0.itemId
+        when (id) {
+            R.id.next_match -> Toast.makeText(this, "NEXT", Toast.LENGTH_SHORT).show()
+            R.id.past_match -> Toast.makeText(this, "PAST", Toast.LENGTH_SHORT).show()
+        }
+        return true
+    }
 
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val bottomNavigationView = navigation
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(this)
     }
 }
 //
